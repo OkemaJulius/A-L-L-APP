@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="M4Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textSizeBig">80sp</item>
+        <item name="textColorBig">#FFFF0000</item>
+
+        <item name="textSizeSmall">50sp</item>
+        <item name="textColorSmall">#FF00FF00</item>
+    </style>
+
+    <style name="M4Theme.Night">
+        <item name="textSizeBig">80sp</item>
+        <item name="textColorBig">#FF0000FF</item>
+
+        <item name="textSizeSmall">50sp</item>
+        <item name="textColorSmall">#FF00FFFF</item>
+    </style>
+
+    <style name="M4TextAppearance">
+        <item name="android:textColor">?textColorBig</item>
+        <item name="android:textSize">?textSizeBig</item>
+    </style>
+
+    <style name="M4TextAppearance.Small">
+        <item name="android:textColor">?textColorSmall</item>
+        <item name="android:textSize">?textSizeSmall</item>
+    </style>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.jiang.android.lib.widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/remind_content_root"
+    android:layout_width="match_parent"
+    android:layout_height="127px"
+    app:bga_sil_bottomMode="pullOut"
+    app:bga_sil_swipeDirection="left">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="132px"
+            android:layout_height="54px" />
+
+        <TextView
+            android:id="@+id/remind_delete"
+            android:layout_width="132px"
+            android:layout_height="72px"
+            android:background="#F35568"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="36px" />
+
+        <View
+            android:layout_width="132px"
+            android:layout_height="1px"
+            android:background="#c1ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/reminder_itemid"
+            android:layout_width="30px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/remind_rule_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/remind_itemline"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#c1ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1px"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/remind_itemtitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="标题"
+                    android:layout_marginRight="30px"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/remind_itemtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="时间"
+                    android:maxLines="1"
+                    android:layout_marginRight="38px"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36px" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</com.jiang.android.lib.widget.SwipeItemLayout>

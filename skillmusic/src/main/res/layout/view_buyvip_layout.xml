@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buyvip_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f20f1b24">
+    <!--android:background="@android:color/transparent">-->
+
+
+    <ImageView
+        android:id="@+id/buyvip_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/buyvip_back_paddingright"
+        android:paddingTop="@dimen/buyvip_back_paddingtop"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_nav_btn_close" />
+
+
+    <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/buyvip_title_margintop"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="亲见音乐会员激活方式"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/buyvip_title_textsize" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/buyvip_buttomlayout_marginleft"
+        android:layout_marginRight="@dimen/buyvip_buttomlayout_marginleft"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/buyvip_buttomlayout_image_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/buyvip_buttomlayout_leftlayout_marginright"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/buyvip_buttomlayout_image_size"
+                android:layout_height="@dimen/buyvip_buttomlayout_image_size"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/music_pic_qrcode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/buyvip_buttom_textlinespacingextra"
+                android:text="第一步：激活码位于智能音箱底部,\n找到“亲见QQ音乐会员激活码”"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buyvip_buttom_textsize1" />
+
+            <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/buyvip_buttomlayout_rightlayout_margintop"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/buyvip_buttom_textlinespacingextra"
+                android:text="第二步：扫码二维码并选择QQ登录,\n在“激活码兑换”中输入免费激活码"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buyvip_buttom_textsize1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

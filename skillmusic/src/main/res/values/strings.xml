@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Beijing Shuzijiayuan, All Rights Reserved.
+  ~ Beijing Shuzijiayuan Confidential and Proprietary
+  -->
+
+<resources>
+    <string name="app_name">音乐</string>
+
+    <string name="song_title_div">·</string>
+    <string name="unkown_artist">未知</string>
+
+    <string name="isFavorite">收藏</string>
+    <string name="collect">收藏</string>
+    <string name="mycollect">我的收藏</string>
+    <string name="channel_audio">随心听</string>
+
+    <!--<string name="no_network_for_play">无法播放，请连接网络</string>-->
+    <!--<string name="no_song_as_no_collection">收藏为空，无法播放</string>-->
+    <!--<string name="no_song_to_play">没有歌曲可以播放</string>-->
+    <string name="succeed_to_collect">已添加该歌曲到收藏</string>
+    <string name="succeed_to_uncollect">该歌曲已从收藏夹中移除</string>
+    <!--<string name="fail_to_collect">收藏失败</string>-->
+    <!--<string name="fail_to_collect_due_to_no_song">当前无歌曲，无法收藏</string>-->
+    <!--<string name="cannot_play_error_song">歌曲信息错误\n无法播放</string>-->
+    <!--<string name="obtain_info_failed_try_now">获取歌曲信息失败\n正在重试</string>-->
+    <!--<string name="obtain_info_failed_try_later">获取歌曲信息失败\n请后再试</string>-->
+    <!--<string name="obtain_info_failed_play_next">获取歌曲信息失败\n切换至下一首</string>-->
+
+    <string name="changshishuo"></string>
+
+    <string name="change_platmode_order">切换到顺序播放模式</string>
+    <string name="change_platmode_single_top">切换到单曲播放模式</string>
+    <string name="change_platmode_random">切换到随机播放模式</string>
+
+    <string name="lrc_label">暂无歌词\n请您欣赏</string>
+    <string name="lrc_loading_label">正在载入歌词&#8230;</string>
+    <string name="song_list">播放列表</string>
+</resources>
+

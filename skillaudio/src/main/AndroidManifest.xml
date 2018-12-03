@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinstalk.her.audio">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ui.player.M4AudioActivity"
+            android:taskAffinity=".M4AudioActivity"
+            android:launchMode="singleTask" />
+
+        <receiver
+            android:name=".receiver.AIAudioReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ai_new" />
+
+                <data
+                    android:scheme="kinstalk"
+                    android:sspPrefix="//fm" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.AudioEventReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="ONLINE" />
+                <action android:name="OFFLINE" />
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED" />
+                <action android:name="kinstalk.com.aicore.action.txsdk.bind_status" />
+                <action android:name="com.kinstalk.action.assistkey" />
+                <action android:name="com.kinstalk.audio.action.playtext" />
+                <action android:name="com.kinstalk.audio.action.play" />
+                <action android:name="com.kinstalk.audio.action.stop" />
+                <action android:name="com.kinstalk.audio.action.next" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.AudioAIService"
+            android:exported="true" />
+    </application>
+</manifest>

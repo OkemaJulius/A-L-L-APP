@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">skillwiki</string>
+    <string name="wiki_sources">"信息来自：%s"</string>
+</resources>

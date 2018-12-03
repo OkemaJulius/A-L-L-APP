@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinstalk.m4.reminder">
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+
+    <application>
+        <activity
+            android:name=".activity.RemindListActivity"
+            android:configChanges="orientation|screenSize|locale"
+            android:launchMode="singleTask"
+            android:taskAffinity=".RemindActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.AlarmActivity"
+            android:taskAffinity=".RemindActivity"
+            android:launchMode="singleInstance" />
+
+        <receiver
+            android:name=".receiver.AIReminderReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ai" />
+
+                <data
+                    android:scheme="kinstalk"
+                    android:sspPrefix="//schedule" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.ReminderReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.EVENT_REMINDER" />
+                <action android:name="android.intent.action.TIME_SET" />
+
+                <data android:scheme="content" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.XWChatBroadcast">
+            <intent-filter >
+                <action android:name="kinstalk.com.aicore.action.txsdk.bind_status" />
+                <action android:name="com.kinstalk.her.qchat.bind_status" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.LauncherRebootReceiver">
+            <intent-filter>
+                <action android:name="com.kinstalk.m4.launcher.windowshow" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.M4ReminderActivity"
+            android:taskAffinity=".RemindActivity" />
+
+        <service android:name=".receiver.ReminderService"/>
+    </application>
+
+</manifest>

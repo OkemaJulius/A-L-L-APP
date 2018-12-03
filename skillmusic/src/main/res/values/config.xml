@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Beijing Shuzijiayuan, All Rights Reserved.
+  ~ Beijing Shuzijiayuan Confidential and Proprietary
+  -->
+
+<resources>
+    <string name="remote_process" translatable="false">com.kinstalk.her.music</string>
+    <!--<string name="remote_process" translatable="false">":remote"</string>-->
+
+</resources>

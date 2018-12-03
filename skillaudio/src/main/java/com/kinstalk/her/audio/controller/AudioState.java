@@ -1,0 +1,20 @@
+package com.kinstalk.her.audio.controller;
+
+/**
+ * Created by lipeng on 18/2/8.
+ */
+
+public enum AudioState {
+    MUSIC_STATE_IDLE,
+    MUSIC_STATE_PLAYING,
+    MUSIC_STATE_ONINIT,
+    MUSIC_STATE_ONLOADING,
+    MUSIC_STATE_ONPREPARED,
+    MUSIC_STATE_ONPAUSE,
+    MUSIC_STATE_ONSTOP,
+    MUSIC_STATE_ONRESUME,
+    MUSIC_STATE_ONCOMPLETION,
+    MUSIC_STATE_ONERROR,
+    MUSIC_STATE_ISPLAYING,
+    MUSIC_STATE_LRCINFO,
+}

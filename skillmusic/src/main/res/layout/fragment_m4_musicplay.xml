@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <ImageView
+        android:id="@+id/musicinfo_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/music_background"
+        android:scaleType="centerCrop"
+        android:src="@android:color/transparent" />
+
+
+    <ImageView
+        android:id="@+id/musicmain_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/mainfragment_back_paddingleft"
+        android:paddingTop="@dimen/mainfragment_back_paddingtop"
+        android:src="@drawable/btn_nav_btn_back" />
+
+    <ImageView
+        android:id="@+id/cp_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="702px"
+        android:layout_marginTop="@dimen/mainfragment_back_paddingtop"
+        android:src="@mipmap/btn_unstar" />
+
+    <ImageView
+        android:id="@+id/musicinfo_cover"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="63px"
+        android:layout_marginTop="99px"
+        android:background="@mipmap/music_morenbeijingtu"
+        android:src="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/control_panel_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/lower_bg" />
+
+    <RelativeLayout
+        android:id="@+id/musicinfo_panel_layout"
+        android:layout_width="557px"
+        android:layout_height="180px"
+        android:layout_marginTop="99px"
+        android:layout_marginLeft="243px"
+        android:orientation="vertical">
+
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+            android:id="@+id/musicinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0px"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/musicplay_info_name_paddingleft"
+            android:paddingRight="@dimen/musicplay_info_name_paddingright"
+            android:textColor="#FF005A98"
+            android:textSize="@dimen/musicplay_info_name_textsize" />
+
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+            android:id="@+id/musicinfo_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicinfo_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/musicplay_info_singer_margintop"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/musicplay_info_name_paddingleft"
+            android:paddingRight="@dimen/musicplay_info_name_paddingright"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/musicplay_info_singer_textsize"
+            android:visibility="gone"/>
+
+
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+            android:id="@+id/musicmain_user_vipstatus_view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/musicplay_main_uservipstatus_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/musicplay_main_uservipstatus_marginright"
+            android:layout_marginTop="@dimen/musicplay_main_uservipstatus_margintop"
+            android:background="@drawable/bg_user_vipinfo"
+            android:gravity="center"
+            android:paddingLeft="@dimen/musicplay_main_uservipstatus_paddingleft"
+            android:paddingRight="@dimen/musicplay_main_uservipstatus_paddingleft"
+            android:textSize="@dimen/musicplay_main_uservipstatus_textsize"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_below="@id/musicinfo_name"
+            android:layout_marginTop="17px">
+
+            <com.kinstalk.m4.skillmusic.ui.view.mylrcview.LrcView
+                android:id="@+id/music_lrcview"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:visibility="visible"
+                app:lrcAnimationDuration="@integer/lrc_animation_duration"
+                app:lrcCurrentTextColor="#1F97F8"
+                app:lrcDividerHeight="@dimen/lrc_divider_height"
+                app:lrcLabel="@string/lrc_label"
+                app:lrcNormalTextColor="#8073A6D1"
+                app:lrcPadding="@dimen/lrc_padding"
+                app:lrcTextSize="@dimen/lrc_text_size"
+                app:lrcTimeTextColor="#D973A6D1"
+                app:lrcTimelineColor="#D973A6D1"
+                app:lrcTimelineTextColor="#D973A6D1" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cp_songlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63px"
+        android:layout_marginTop="334px"
+        android:scaleType="center"
+        android:src="@drawable/btn_play_bar_btn_songlist" />
+
+    <ImageView
+        android:id="@+id/cp_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="196px"
+        android:layout_marginTop="318px"
+        android:scaleType="center"
+        android:src="@drawable/btn_play_bar_btn_left" />
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="344px"
+            android:layout_marginTop="294px"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/cp_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/btn_music_bar_btn_play"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/video_loadingview"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="@dimen/musicplay_main_controlpanel_controlitem_loading_width"
+                android:layout_height="@dimen/musicplay_main_controlpanel_controlitem_loading_width"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/music_progress_loading"
+                android:visibility="visible" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/cp_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="522px"
+        android:layout_marginTop="318px"
+        android:scaleType="center"
+        android:src="@drawable/btn_play_bar_btn_right" />
+
+    <ImageView
+        android:id="@+id/cp_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="655px"
+        android:layout_marginTop="334px"
+        android:scaleType="center"
+        android:src="@drawable/btn_play_bar_btn_loop" />
+
+    <RelativeLayout
+        android:id="@+id/control_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/musicplay_main_controlpanel_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.kinstalk.m4.skillmusic.ui.view.VideoSeekFrameLayout
+            android:layout_width="540px"
+            android:layout_marginLeft="129px"
+            android:background="@android:color/transparent"
+            android:layout_height="66px">
+
+            <SeekBar
+                android:id="@+id/video_seekbar"
+                android:layout_width="540px"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:maxHeight="@dimen/musicplay_main_seekbar_height"
+                android:minHeight="@dimen/musicplay_main_seekbar_height"
+                android:paddingEnd="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:splitTrack="false"
+                android:progressDrawable="@drawable/bg_bar_player"
+                android:thumb="@mipmap/progress_n"
+                android:thumbOffset="0px"/>
+
+        </com.kinstalk.m4.skillmusic.ui.view.VideoSeekFrameLayout>
+
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:textColor="#005A98"
+                android:textSize="@dimen/musicplay_main_time_textsize" />
+
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+                android:id="@+id/total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="695px"
+                android:textColor="#005A98"
+                android:textSize="@dimen/musicplay_main_time_textsize" />
+
+    </RelativeLayout>
+
+
+    <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+        android:id="@+id/musicplay_scrolltime"
+        android:layout_width="@dimen/musicplay_main_scrolltime_width"
+        android:layout_height="@dimen/musicplay_main_scrolltime_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_musicplay_scrolltime"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/musicplay_main_scrolltime_textsize"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">天气</string>
+    <string name="air_auality_axcellent">优</string>
+    <string name="air_auality_superior">良</string>
+    <string name="air_auality_slightly_polluted">轻度污染</string>
+    <string name="air_auality_medium_polluted">中度污染</string>
+    <string name="air_auality_heav_polluted">重度污染</string>
+    <string name="air_auality_seriously_polluted">严重污染</string>
+    <string name="wind_scale">风力</string>
+    <string name="wind_level">级</string>
+    <string name="alarm_type">预警</string>
+    <string name="query_weather_info_error">天气信息获取失败</string>
+    <string name="query_weather_info_net_error">网络开小差了，请稍后再试</string>
+    <string name="location_error">定位信息获取失败</string>
+    <string name="wind_name">风</string>
+    <string name="weather_detail_air">空气质量</string>
+    <string name="weather_detail_humidity">湿度</string>
+    <string name="weather_detail_wind">风力</string>
+    <string name="weather_temp">%s°</string>
+    <string name="weather_temp_range">%s°/%s°</string>
+    <string name="weather_wind_info">%1$s风\n%2$s级</string>
+    <string name="weather_ai_wind_info">%1$s\n%2$s</string>
+    <string name="text_pollution">污染</string>
+
+    <string name="try_to_say">尝试说 \"小微你好，今天天气怎么样\"</string>
+
+
+    <string name="weather_detail">--</string>
+</resources>

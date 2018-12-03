@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinstalk.m4.skilltimer">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application>
+        <receiver
+            android:name=".receiver.AITimerReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ai" />
+
+                <data
+                    android:scheme="kinstalk"
+                    android:sspPrefix="//timer" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.M4TimerActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=".M4TimerActivity">
+
+        </activity>
+
+        <service
+            android:name=".service.M4TimerService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

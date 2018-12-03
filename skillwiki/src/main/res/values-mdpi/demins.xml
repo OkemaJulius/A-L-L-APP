@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="news_backImage_marginLeft">46dp</dimen>
+    <dimen name="news_backImage_marginTop">27dp</dimen>
+    <dimen name="news_tryToSayText_marginTop">27dp</dimen>
+    <dimen name="news_tryToSayText_textSize">26dp</dimen>
+    <dimen name="news_contentText_width">522dp</dimen>
+    <dimen name="news_contentText_height">240dp</dimen>
+    <dimen name="news_contentText_marginBottom">3dp</dimen>
+    <dimen name="news_contentText_marginRight">50dp</dimen>
+    <dimen name="news_contentText_marginTop">136dp</dimen>
+    <dimen name="news_contentText_lineSpacingExtra">10dp</dimen>
+    <dimen name="news_contentText_textSize">44dp</dimen>
+    <dimen name="news_titleText_textSize">44dp</dimen>
+    <dimen name="news_shapeImage_width">622dp</dimen>
+    <dimen name="news_shapeImage_height">100dp</dimen>
+    <dimen name="news_newsImage_marginBottom">77dp</dimen>
+    <dimen name="news_newsImage_marginLeft">40dp</dimen>
+    <dimen name="news_newsImage_marginRight">622dp</dimen>
+    <dimen name="news_newsImage_marginTop">136dp</dimen>
+    <dimen name="news_playerBar_height">157dp</dimen>
+    <dimen name="news_playerProgress_padding">40dp</dimen>
+    <dimen name="news_playerTimeText_textSize">20dp</dimen>
+    <dimen name="news_seekBar_width">0dp</dimen>
+    <dimen name="news_seekBar_height">56dp</dimen>
+    <dimen name="news_seekBar_padding">20dp</dimen>
+    <dimen name="news_seekBar_maxmin">3dp</dimen>
+    <dimen name="news_seekBar_thumbOffset">8dp</dimen>
+    <dimen name="news_playerBtn_marginBottom">40dp</dimen>
+    <dimen name="news_previousBtn_marginLeft">370dp</dimen>
+    <dimen name="news_playBtn_marginLeft">485dp</dimen>
+    <dimen name="news_nextBtn_marginLeft">603dp</dimen>
+
+    <dimen name="wiki_titleText_margin">40dp</dimen>
+    <dimen name="wiki_titleText_marginTop">100dp</dimen>
+    <dimen name="wiki_titleText_textSize">44dp</dimen>
+    <dimen name="wiki_contentText_width">944dp</dimen>
+    <dimen name="wiki_contentText_marginBottom">127dp</dimen>
+    <dimen name="wiki_contentText_marginRight">40dp</dimen>
+    <dimen name="wiki_contentText_marginTop">206dp</dimen>
+    <dimen name="wiki_contentText_lineSpacingExtra">40dp</dimen>
+    <dimen name="wiki_contentText_textSize">66dp</dimen>
+    <dimen name="wiki_splitLine_height">1dp</dimen>
+    <dimen name="wiki_splitLine_margin">40dp</dimen>
+    <dimen name="wiki_splitLine_marginTop">164dp</dimen>
+    <dimen name="wiki_shapeImage_width">944dp</dimen>
+    <dimen name="wiki_shapeImage_height">200dp</dimen>
+    <dimen name="wiki_infoText_marginBottom">20dp</dimen>
+    <dimen name="wiki_infoText_marginRight">40dp</dimen>
+    <dimen name="wiki_infoText_margintextSize">26dp</dimen>
+
+    <dimen name="toast_nofavorite_layout_height">120dp</dimen>
+    <dimen name="toast_nofavorite_marginbottom">5dp</dimen>
+    <dimen name="toast_nofavorite_textsize">32dp</dimen>
+    <dimen name="toast_nomal_marginbottom">10dp</dimen>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kinstalk.her.weather.ui.views.ForcastItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_simple_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/weather_c1"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/icon_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/tianqi_2_icon"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/date_simple_text" />
+
+    <TextView
+        android:id="@+id/temp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- / -"
+        android:textColor="@color/weather_c1"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/icon_img" />
+
+</com.kinstalk.her.weather.ui.views.ForcastItem>

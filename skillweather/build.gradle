@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.android
+def librarys = rootProject.ext.dependencies
+
+android {
+    compileSdkVersion config.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: '../publicaicore/libs')
+    provided "com.kinstalk.common:kinstalk-common:+"
+    implementation librarys.supportV7
+    implementation librarys.constraint
+    testImplementation librarys.testImplementation
+    androidTestImplementation librarys.testRunner
+    androidTestImplementation librarys.testEspresso
+    implementation project(':publicapi')
+    implementation project(':publicaicore')
+    implementation project(':publichttplib')
+    implementation project(':publicownerlib')
+    implementation project(':publicdomain')
+    compile 'com.orhanobut:logger:2.1.1'
+}
+

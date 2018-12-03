@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="m4">
+        <attr name="textSizeBig" format="dimension" />
+        <attr name="textColorBig" format="color" />
+        <attr name="textSizeSmall" format="dimension" />
+        <attr name="textColorSmall" format="color" />
+
+        /**************************************************************************
+        * 字体大小 *
+        *************************************************************************/
+        //标题
+        <attr name="textsize_title" format="dimension|reference" />
+        //列表
+        <attr name="textsize_list" format="dimension|reference" />
+        //正文
+        <attr name="textsize_content" format="dimension|reference" />
+        //描述1
+        <attr name="textsize_description_1" format="dimension|reference" />
+        //描述2
+        <attr name="textsize_description_2" format="dimension|reference" />
+
+
+        /**************************************************************************
+        * 字体颜色 *
+        *************************************************************************/
+        <attr name="textcolor_c1" format="color|reference" />
+        <attr name="textcolor_c2" format="color|reference" />
+
+    </declare-styleable>
+</resources>

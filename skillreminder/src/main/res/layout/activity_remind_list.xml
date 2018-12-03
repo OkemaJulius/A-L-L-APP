@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:background="#0f1b24"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kinstalk.m4.reminder.view.TouchableRecyclerView
+        android:id="@+id/remind_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="47dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/home_btn" />
+
+    <TextView
+        android:id="@+id/remind_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="加载中..."
+        android:textColor="@android:color/white"
+        android:textSize="36dp" />
+
+    <FrameLayout
+        android:id="@+id/remind_empty_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="22px"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/tixing_wuneirong_icon"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="@string/remind_empty_tips"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#4DFFFFFF" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

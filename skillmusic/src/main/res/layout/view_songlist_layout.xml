@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/songinfo_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/music_background">
+    <!--android:background="@android:color/transparent">-->
+    <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+        android:id="@+id/songlist_countview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#005A98"
+        android:text="@string/song_list"
+        android:textStyle="bold"
+        android:textSize="@dimen/songlist_listitem_count_textsize" />
+
+    <ImageView
+        android:id="@+id/songlist_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/songlist_back_paddingright"
+        android:paddingTop="@dimen/songlist_back_paddingtop"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_nav_btn_close" />
+
+    <RelativeLayout
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="403px"
+        android:layout_marginTop="77px"
+        android:background="@mipmap/music_background">
+    <com.kinstalk.m4.skillmusic.ui.view.recycleview.swiperefreshload.SwipeRefreshLoadLayout
+        android:id="@+id/songinfo_recycler_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/songinfo_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/songlist_recyclerview_padding_bottom"
+            android:paddingTop="@dimen/songlist_recyclerview_padding_top"
+            android:scrollbars="none" />
+    </com.kinstalk.m4.skillmusic.ui.view.recycleview.swiperefreshload.SwipeRefreshLoadLayout>
+</RelativeLayout>
+
+</RelativeLayout>

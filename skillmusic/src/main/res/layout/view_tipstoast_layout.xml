@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f20f1b24">
+    <!--android:background="@android:color/transparent">-->
+
+    <FrameLayout
+        android:id="@+id/tips_toast_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toast_nofavorite_layout_height"
+            android:background="#E52c2c2c">
+
+            <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+                android:id="@+id/tips_toast_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toast_nofavorite_textsize" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

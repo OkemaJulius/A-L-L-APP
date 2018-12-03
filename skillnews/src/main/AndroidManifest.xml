@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinstalk.her.skillnews">
+
+    <application>
+        <meta-data
+            android:name="com.kinstalk.her.skillnews.components.glide.CustomGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".NewsMainActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=".NewsMainActivity" />
+
+        <service
+            android:name=".components.service.NewsService"
+            android:exported="true" />
+
+        <receiver
+            android:name=".components.receiver.AINewsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ai_new" />
+                <data
+                    android:scheme="kinstalk"
+                    android:sspPrefix="//news" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".components.receiver.SystemEventReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ONLINE" />
+                <action android:name="OFFLINE" />
+                <action android:name="ACTION_LOGIN_SUCCESS" />
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED" />
+                <action android:name="kinstalk.com.aicore.action.txsdk.bind_status" />
+                <action android:name="her.media.play" />
+                <action android:name="her.media.pause" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/songlist_listitem_height"
+    android:paddingTop="@dimen/songlist_listitem_playing_paddingtop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.kinstalk.m4.skillmusic.ui.view.JyCustomTextView
+            android:id="@+id/songinfo_item_songname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:textColor="#1F97FB"
+            android:textSize="@dimen/songlist_listitem_songname_textsize" />
+        <ImageView
+            android:id="@+id/songinfo_item_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/songlist_listitem_playing_marginright"
+            android:background="@mipmap/music_songlist_bofangzhong_icon" />
+
+        <ImageView
+            android:id="@+id/songinfo_item_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/songlist_listitem_favorite_padding" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/songinfo_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/songlist_listitem_line_paddingleft"
+        android:src="#3DFFFFFF" />
+
+</RelativeLayout>

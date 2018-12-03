@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/audio_bg">
+
+    <TextView
+        android:id="@+id/playlist_contentview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="播放列表"
+        android:textColor="#005A98"
+        android:textSize="38px" />
+
+    <ImageButton
+        android:id="@+id/playlist_close"
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11px"
+        android:layout_marginTop="12px"
+        android:background="@drawable/btn_close" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/playlist_swipeloadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/playlist_contentview">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:scrollbars="none" />
+
+        <com.kinstalk.her.audio.ui.view.LoadMoreFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="70.6dp"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</RelativeLayout>
